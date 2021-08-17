@@ -1,0 +1,8 @@
+Arthas Menethil 1 50 0
+Uther Lightbringer 1 10 0
+Grom Hellscream 1 20 0
+Jaina Proudmore 1 15 0
+Varian Wrynn 1 35 0
+Darth Vader 1 75 10
+Benny Twoshoes 1 18 0
+Patrick Star 1 1 0

@@ -1,0 +1,32 @@
+                      Reg.   Ovt.   Hourly  Gross                    Net    
+Name                  Hours  Hours  Rate    Pay      Taxes   Deduct  Pay    
+====================  =====  =====  ======  =======  ======  ======  =======
+Menethil, Arthas       1.00   0.00   50.00    50.00   15.00    0.00    35.00
+Lightbringer, Uther    1.00   0.00   10.00    10.00    3.00    0.00     7.00
+Hellscream, Grom       1.00   0.00   20.00    20.00    6.00    0.00    14.00
+Proudmore, Jaina       1.00   0.00   15.00    15.00    4.50    0.00    10.50
+Wrynn, Varian          1.00   0.00   35.00    35.00   10.50    0.00    24.50
+Vader, Darth           1.00   0.00   75.00    75.00   22.50   10.00    42.50
+Twoshoes, Benny        1.00   0.00   18.00    18.00    5.40    0.00    12.60
+Star, Patrick          1.00   0.00    1.00     1.00    0.30    0.00     0.70
+
+==============================
+   Employee Payroll Summary   
+==============================
+
+                      Gross   
+Name                  Pay     
+====================  ========
+Vader, Darth             75.00
+Menethil, Arthas         50.00
+Wrynn, Varian            35.00
+Hellscream, Grom         20.00
+Twoshoes, Benny          18.00
+Proudmore, Jaina         15.00
+Lightbringer, Uther      10.00
+Star, Patrick             1.00
+
+Total gross pay  : $224.00
+Average gross pay: $28.00
+Minumum gross pay: $1.00
+Maximum gross pay: $75.00
