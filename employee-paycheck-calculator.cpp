@@ -30,8 +30,6 @@ void sort_employees(double employee_gross_pay[], string employee_names[], int em
 int main()
 	
 {
-
-    
     string first_name,                               //first name input by user
         last_name,                                   //last name input by user
         full_name,                                   //first and last name formatted into last, first
@@ -70,8 +68,6 @@ int main()
         }
 
     while (!empdata.eof() && employees < LIMIT){
-
-
         input_employee_data(first_name, last_name, hours, hourly_rate, deductions, empdata);
 
 		if (!empdata.eof()){
@@ -113,9 +109,7 @@ void sort_employees(double employee_gross_pay[], string employee_names[], int em
 	double temp_gross_pay;	//temporarily holds employee gross pay
 	string temp_name;		//temporarily holds employee name
 
-
 /*bubble sort v3*/
-
 	for (pass = 1; pass < employees && swap; pass ++){
         swap = false;
         for (i=0; i<employees-pass ; i++){
@@ -156,19 +150,15 @@ void employee_summary(string employee_names[], int employees, double employee_gr
     results << "                      Gross   " << endl;
     results << "Name                  Pay     " << endl;
     results << "====================  ========" << endl;
-        
     
     for (i = 0; i < employees; i++)
         results << left << setw(22) << employee_names[i] << right << setw(8) << employee_gross_pay[i] << endl;
-        
 
     results << endl;
     results << "Total gross pay  : $" << summed_gross_pay << endl;
     results << "Average gross pay: $" << (summed_gross_pay / employees) << endl;
     results << "Minumum gross pay: $" << min_gross << endl;
     results << "Maximum gross pay: $" << max_gross << endl;
-
-
 }
 
 
@@ -178,13 +168,11 @@ void employee_summary(string employee_names[], int employees, double employee_gr
 //---------------------------------------------------------------------------------------------------------
 void input_employee_data(string &first_name, string &last_name, double &hours, double &hourly_rate, double &deductions, ifstream &empdata)
 {
-    
         empdata >> first_name;
         empdata >> last_name;
         empdata >> hours;
         empdata >> hourly_rate;
         empdata >> deductions;
-        
 }
 
 
@@ -195,7 +183,6 @@ void input_employee_data(string &first_name, string &last_name, double &hours, d
 string join_name(string first_name, string last_name)
 {
     return last_name + ", " + first_name;
-
 }
 
 
@@ -216,7 +203,6 @@ void split_hours(double hours, double &regular_hours, double &overtime_hours)
         overtime_hours = 0;
         regular_hours = hours;
     }
-
 }
 
 
@@ -226,9 +212,6 @@ void split_hours(double hours, double &regular_hours, double &overtime_hours)
 double calculate_gross_pay(double regular_hours, double overtime_hours, double hourly_rate)
 {
     return (regular_hours*hourly_rate) + (overtime_hours*(1.5*hourly_rate));
-    
-    
-
 }
 
 //---------------------------------------------------------------------------------------------------------
@@ -263,7 +246,6 @@ void output_payroll_data(string formatted_name, double regular_hours, double ove
     results << right << setw(7) << regular_hours << setw(7) << overtime_hours << setw(8) << hourly_rate; //hours
     results << setw(9) << gross_pay << setw(8) << tax << setw(8) << deductions << setw(9) << net_pay; // money
     results << endl;
-    
 }
 
 
@@ -272,7 +254,6 @@ void output_payroll_data(string formatted_name, double regular_hours, double ove
 //---------------------------------------------------------------------------------------------------------
 void min_max_gross(double gross_pay, int employees, double &min_gross, double &max_gross)
 {
-    
     if (employees == 0){
         max_gross = gross_pay;
         min_gross = gross_pay;
@@ -281,5 +262,4 @@ void min_max_gross(double gross_pay, int employees, double &min_gross, double &m
         max_gross = gross_pay;
     else if (gross_pay < min_gross)
         min_gross = gross_pay;
-
 }
